@@ -1,13 +1,15 @@
+/* ===== 时间切换背景 ===== */
+
 /* 白天背景 */
 #web_bg {
-  background: url(/images/day-bg.jpg) center/cover no-repeat fixed;
+  background: url(/images/day-bg.jpg) center/cover no-repeat fixed !important;
+  transition: background 0.5s ease-in-out !important;  /* 添加过渡动画 */
 }
 
 /* 夜晚背景 */
 body.night-mode #web_bg {
-  background: url(/images/night-bg.jpg) center/cover no-repeat fixed;
+  background: url(/images/night-bg.jpg) center/cover no-repeat fixed !important;
 }
-
 
 
 /* 推荐：渐变深色半透明横幅 */
