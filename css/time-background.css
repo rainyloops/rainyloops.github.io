@@ -126,17 +126,3 @@ html {
 }
 
 
-
-/* 修正右下角按钮悬停颜色 */
-#rightside > div > button:hover,
-#rightside > div > a:hover {
-  background: #5A7B66 !important;      /* 深灰绿色 */
-  color: white !important;
-  border-color: #5A7B66 !important;
-}
-
-/* 修正其他按钮悬停颜色 */
-button:hover,
-a:hover {
-  color: #5A7B66 !important;           /* 深灰绿色 */
-}
