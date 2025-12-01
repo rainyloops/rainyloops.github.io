@@ -1,0 +1,128 @@
+/* ===== 时间切换背景 ===== */
+
+/* 白天背景 */
+#web_bg {
+  background: url(/images/day-bg.jpg) center/cover no-repeat fixed !important;
+  transition: background 0.5s ease-in-out !important;  /* 添加过渡动画 */
+}
+
+/* 夜晚背景 */
+body.night-mode #web_bg {
+  background: url(/images/night-bg.jpg) center/cover no-repeat fixed !important;
+}
+
+
+/* 推荐：渐变深色半透明横幅 */
+#page-header:before {
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0.8) 0%,    /* 顶部更深 */
+    rgba(40, 40, 40, 0.5) 100%   /* 底部稍浅 */
+  ) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#page-header {
+  background: transparent !important;
+}
+
+/* 文字样式 */
+#page-header.post-bg .post-title,
+#page-header.not-home-page .page-title {
+  color: white !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 600 !important;
+}
+
+/* 导航栏也统一风格 */
+#nav {
+  background: rgba(30, 30, 30, 0.7) !important;
+  backdrop-filter: blur(15px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+
+
+/* ===== 页脚毛玻璃效果 ===== */
+footer {
+  background: rgba(20, 20, 20, 0.75) !important;  /* 深黑色背景 */
+  backdrop-filter: blur(25px) !important;  /* 背景模糊25像素，创造毛玻璃效果 */
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;   /* 顶部细边框，浅色半透明 */
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3) !important;   /* 向上阴影，增强立体感 */
+}
+
+footer .footer-inner {
+  color: rgba(255, 255, 255, 0.85) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  color: #82b1ff !important;
+  text-shadow: 0 0 10px rgba(130, 177, 255, 0.7) !important;
+  transform: translateY(-1px) !important;
+}
+
+
+
+/* ===== 白框黑色填充滚动条 ===== */
+
+/* 滚动条轨道宽度和背景 */
+html::-webkit-scrollbar {
+  width: 14px !important;                               /* 滚动条宽度14像素 */
+}
+
+/* 滚动条轨道样式 - 白色边框 */
+html::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05) !important;     /* 轨道背景，几乎透明 */
+  border-radius: 7px !important;                        /* 圆角，7像素 */
+  border: 2px solid rgba(255, 255, 255, 0.7) !important;      /* 白色边框，70%不透明 */
+  margin: 2px !important;                               /* 轨道外边距 */
+}
+
+/* 滚动条滑块 - 黑色填充 */
+html::-webkit-scrollbar-thumb {
+  background: #000000 !important;                       /* 纯黑色填充 */
+  border-radius: 7px !important;                        /* 圆角与轨道匹配 */
+  border: 2px solid rgba(255, 255, 255, 0.8) !important;      /* 白色边框，比轨道稍亮 */
+  min-height: 40px !important;                          /* 滑块最小高度 */
+}
+
+/* 滚动条滑块悬停状态 */
+html::-webkit-scrollbar-thumb:hover {
+  background: #1a1a1a !important;                       /* 悬停时变成深灰色 */
+  border: 2px solid rgba(255, 255, 255, 0.9) !important;      /* 边框变得更白 */
+}
+
+/* 滚动条滑块按下状态 */
+html::-webkit-scrollbar-thumb:active {
+  background: #333333 !important;                       /* 按下时变成中灰色 */
+}
+
+/* Firefox浏览器滚动条样式 */
+html {
+  scrollbar-width: thin !important;                     /* 滚动条宽度：细 */
+  scrollbar-color: #000000 rgba(255, 255, 255, 0.7) !important; /* 滑块黑色，轨道白色 */
+}
+
+
+
+/* 修改文字选中效果 - 灰蓝色 */
+::selection {
+  background: rgba(113, 130, 143, 0.3) !important;  /* 灰蓝色背景，30%透明 */
+  color: inherit !important;                        /* 保持原文字颜色 */
+  text-shadow: none !important;                     /* 去掉阴影 */
+}
+
+::-moz-selection {
+  background: rgba(113, 130, 143, 0.3) !important;  /* Firefox 兼容 */
+  color: inherit !important;
+  text-shadow: none !important;
+}
+
+
