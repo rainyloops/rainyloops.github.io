@@ -45,10 +45,10 @@ body.night-mode #web_bg {
 
 /* ===== 页脚毛玻璃效果 ===== */
 footer {
-  background: rgba(15, 20, 30, 0.75) !important;
-  backdrop-filter: blur(25px) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
-  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3) !important;
+  background: rgba(20, 20, 20, 0.75) !important;  /* 深黑色背景 */
+  backdrop-filter: blur(25px) !important;  /* 背景模糊25像素，创造毛玻璃效果 */
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;   /* 顶部细边框，浅色半透明 */
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3) !important;   /* 向上阴影，增强立体感 */
 }
 
 footer .footer-inner {
@@ -112,15 +112,15 @@ html {
 
 
 
-/* 修改文字选中效果 - 灰绿色 */
+/* 修改文字选中效果 - 灰蓝色 */
 ::selection {
-  background: rgba(120, 153, 134, 0.3) !important;  /* 灰绿色背景，30%透明 */
+  background: rgba(113, 130, 143, 0.3) !important;  /* 灰蓝色背景，30%透明 */
   color: inherit !important;                        /* 保持原文字颜色 */
   text-shadow: none !important;                     /* 去掉阴影 */
 }
 
 ::-moz-selection {
-  background: rgba(120, 153, 134, 0.3) !important;  /* Firefox 兼容 */
+  background: rgba(113, 130, 143, 0.3) !important;  /* Firefox 兼容 */
   color: inherit !important;
   text-shadow: none !important;
 }
